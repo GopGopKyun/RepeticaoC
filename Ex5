@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int altura, numero, i, alunoalto, alunobaixo, numeroalto, numerobaixo;
+    alunoalto=0;
+    alunobaixo=300;
+    numerobaixo=0;
+    numeroalto=0;
+    for(i=1;i<6;i++)
+    {
+        printf("Insira sua altura em cm: ");
+        scanf("%d", &altura);
+        if (altura>alunoalto) {
+            alunoalto=altura;
+            numeroalto=i;
+        }
+        if (altura<alunobaixo){
+            alunobaixo=altura;
+            numerobaixo=i;
+        }
+    }
+    
+    printf("O aluno com numero %d é o mais alto, com %d de altura. \n", numeroalto, alunoalto);
+    printf("O aluno com numero %d é o mais baixo, com %d de altura.", numerobaixo, alunobaixo);
+
+    return 0;
+}
