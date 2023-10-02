@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c, i;
+    c=0;
+    printf("Insira a base: ");
+    scanf("%d", &a);
+    printf("Insira o expoente: ");
+    scanf("%d", &b);
+    
+    for(i=0;i!=b;i++){
+    c+=a*a;
+    }
+    
+    printf("A resposta da soma: %d", c);
+    
+    return 0;
+}
