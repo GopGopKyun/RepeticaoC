@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int idade,i,h,m,idadeh,idadem,idadehF,idademF;
+    float peso,pesoh,pesom,pesohF,pesomF;
+    char sexo;
+    h=0;
+    m=0;
+    
+    for (i=0; i<4; i++)
+    {
+     printf("Insira sua idade: ");
+     scanf("%d", &idade);
+     printf("Insira seu peso: ");
+     scanf("%f", &peso);
+     printf("H-Homem \nM-Mulher \n Insira seu sexo: ");
+     scanf("%s", &sexo);
+        if (sexo='H')
+        {
+            h+=1;
+            pesoh+=peso;
+            idadeh+=idade;
+        }
+        if (sexo='M')
+        {
+            m+=1;
+            pesom+=peso;
+            idadem+=idade;
+        }
+    }
+    (pesomF=pesom/m);
+    (idademF=idadem/m);
+    (pesohF=pesoh/h);
+    (idadehF=idadeh/h);
+    printf("Media do peso feminino: %.2f \nMedia da idade feminina: %d \nMedia do peso masculino: %.2f \nMedia da idade masculina: %d", pesomF, idademF,pesohF, idadehF);
+
+    return 0;
+}
